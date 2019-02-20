@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Thu Nov 15 17:25:07 2018
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+Revision Name : jk_ff
+Top-level Entity Name : jk_ff
+Family : MAX 10
+Total logic elements : 4
+    Total combinational functions : 4
+    Dedicated logic registers : 1
+Total registers : 1
+Total pins : 7
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

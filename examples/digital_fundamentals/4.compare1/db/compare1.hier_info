@@ -1,0 +1,12 @@
+|compare1
+a => led2.IN0
+a => led3.IN0
+a => led1.IN0
+b => led1.IN1
+b => led2.IN1
+b => led3.IN1
+led1 << led1.DB_MAX_OUTPUT_PORT_TYPE
+led2 << led2.DB_MAX_OUTPUT_PORT_TYPE
+led3 << led3.DB_MAX_OUTPUT_PORT_TYPE
+
+

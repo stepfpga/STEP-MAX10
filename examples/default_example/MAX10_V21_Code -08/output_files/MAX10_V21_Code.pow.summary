@@ -1,0 +1,12 @@
+PowerPlay Power Analyzer Status : Successful - Mon Nov 21 17:38:47 2016
+Quartus II 64-Bit Version : 15.0.0 Build 145 04/22/2015 SJ Full Version
+Revision Name : MAX10_V21_Code
+Top-level Entity Name : MAX10_V21_Code
+Family : MAX 10
+Device : 10M02SCM153I7G
+Power Models : Preliminary
+Total Thermal Power Dissipation : 1974.55 mW
+Core Dynamic Thermal Power Dissipation : 0.00 mW
+Core Static Thermal Power Dissipation : 234.97 mW
+I/O Thermal Power Dissipation : 1739.58 mW
+Power Estimation Confidence : Low: user provided insufficient toggle rate data

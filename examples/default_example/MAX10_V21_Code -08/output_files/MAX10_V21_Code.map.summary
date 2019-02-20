@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Wed May 30 14:55:22 2018
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : MAX10_V21_Code
+Top-level Entity Name : MAX10_V21_Code
+Family : MAX 10
+Total logic elements : 167
+    Total combinational functions : 164
+    Dedicated logic registers : 86
+Total registers : 86
+Total pins : 77
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

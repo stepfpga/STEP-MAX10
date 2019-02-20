@@ -1,0 +1,491 @@
+Analysis & Synthesis report for counter60
+Fri Nov 16 09:56:10 2018
+Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Parameter Settings for User Entity Instance: divide:u1
+ 12. Post-Synthesis Netlist Statistics for Top Partition
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Fri Nov 16 09:56:10 2018       ;
+; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
+; Revision Name                      ; counter60                                   ;
+; Top-level Entity Name              ; counter60                                   ;
+; Family                             ; MAX 10                                      ;
+; Total logic elements               ; 79                                          ;
+;     Total combinational functions  ; 79                                          ;
+;     Dedicated logic registers      ; 34                                          ;
+; Total registers                    ; 34                                          ;
+; Total pins                         ; 21                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
+; UFM blocks                         ; 0                                           ;
+; ADC blocks                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; 10M08SAM153C8G     ;                    ;
+; Top-level entity name                                            ; counter60          ; counter60          ;
+; Family name                                                      ; MAX 10             ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 2           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                       ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                         ; Library ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------------+---------+
+; segment.v                        ; yes             ; User Verilog HDL File  ; C:/Users/liuyu/Desktop/experimrnt for 08sam/18.counter60/segment.v   ;         ;
+; divide.v                         ; yes             ; User Verilog HDL File  ; C:/Users/liuyu/Desktop/experimrnt for 08sam/18.counter60/divide.v    ;         ;
+; counter60.v                      ; yes             ; User Verilog HDL File  ; C:/Users/liuyu/Desktop/experimrnt for 08sam/18.counter60/counter60.v ;         ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 79        ;
+;                                             ;           ;
+; Total combinational functions               ; 79        ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 42        ;
+;     -- 3 input functions                    ; 9         ;
+;     -- <=2 input functions                  ; 28        ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 56        ;
+;     -- arithmetic mode                      ; 23        ;
+;                                             ;           ;
+; Total registers                             ; 34        ;
+;     -- Dedicated logic registers            ; 34        ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 21        ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; rst~input ;
+; Maximum fan-out                             ; 36        ;
+; Total fan-out                               ; 387       ;
+; Average fan-out                             ; 2.50      ;
++---------------------------------------------+-----------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                  ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name   ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------+-------------+--------------+
+; |counter60                 ; 79 (17)             ; 34 (9)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 21   ; 0            ; 0          ; |counter60            ; counter60   ; work         ;
+;    |divide:u1|             ; 48 (48)             ; 25 (25)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |counter60|divide:u1  ; divide      ; work         ;
+;    |segment:u2|            ; 14 (14)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |counter60|segment:u2 ; segment     ; work         ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++--------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                             ;
++-----------------------------------------+--------------------------------------+
+; Register name                           ; Reason for Removal                   ;
++-----------------------------------------+--------------------------------------+
+; segment:u2|seg~0                        ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~1                        ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~2                        ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~3                        ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~4                        ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~5                        ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~6                        ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~7                        ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~8                        ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~9                        ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~10                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~11                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~12                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~13                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~14                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~15                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~16                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~17                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~18                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~19                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~20                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~21                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~22                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~23                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~24                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~25                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~26                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~27                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~28                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~29                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~30                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~31                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~32                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~33                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~34                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~35                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~36                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~37                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~38                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~39                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~40                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~41                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~42                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~43                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~44                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~45                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~46                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~47                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~48                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~49                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~50                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~51                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~52                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~53                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~54                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~55                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~56                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~57                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~58                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~59                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~60                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~61                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~62                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~63                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~64                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~65                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~66                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~67                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~68                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~69                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~70                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~71                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~72                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~73                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~74                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~75                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~76                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~77                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~78                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~79                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~80                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~81                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~82                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~83                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~84                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~85                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~86                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~87                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~88                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~89                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~90                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~91                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~92                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~93                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~94                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~95                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~96                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~97                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~98                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~99                       ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~100                      ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~101                      ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~102                      ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~103                      ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~104                      ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~105                      ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~106                      ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~107                      ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~108                      ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~109                      ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~110                      ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~111                      ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~112                      ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~113                      ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~114                      ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~115                      ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~116                      ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~117                      ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~118                      ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~119                      ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~120                      ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~121                      ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~122                      ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~123                      ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~124                      ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~125                      ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~126                      ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~127                      ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~128                      ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~129                      ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~130                      ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~131                      ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~132                      ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~133                      ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~134                      ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~135                      ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~136                      ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~137                      ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~138                      ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~139                      ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~140                      ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~141                      ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~142                      ; Stuck at GND due to stuck port clock ;
+; segment:u2|seg~143                      ; Stuck at GND due to stuck port clock ;
+; Total Number of Removed Registers = 144 ;                                      ;
++-----------------------------------------+--------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 34    ;
+; Number of registers using Synchronous Clear  ; 1     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 25    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 8     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |counter60|cnt[5]          ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |counter60|cnt[0]          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+
+
++--------------------------------------------------------+
+; Parameter Settings for User Entity Instance: divide:u1 ;
++----------------+----------+----------------------------+
+; Parameter Name ; Value    ; Type                       ;
++----------------+----------+----------------------------+
+; WIDTH          ; 24       ; Signed Integer             ;
+; N              ; 12000000 ; Signed Integer             ;
++----------------+----------+----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 21                          ;
+; cycloneiii_ff         ; 34                          ;
+;     CLR               ; 25                          ;
+;     ENA               ; 8                           ;
+;     SCLR              ; 1                           ;
+; cycloneiii_lcell_comb ; 92                          ;
+;     arith             ; 23                          ;
+;         2 data inputs ; 23                          ;
+;     normal            ; 69                          ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 13                          ;
+;         2 data inputs ; 4                           ;
+;         3 data inputs ; 9                           ;
+;         4 data inputs ; 42                          ;
+;                       ;                             ;
+; Max LUT depth         ; 4.30                        ;
+; Average LUT depth     ; 2.79                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+    Info: Processing started: Fri Nov 16 09:55:48 2018
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off counter60 -c counter60
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file segment.v
+    Info (12023): Found entity 1: segment File: C:/Users/liuyu/Desktop/experimrnt for 08sam/18.counter60/segment.v Line: 15
+Warning (12090): Entity "divide" obtained from "divide.v" instead of from Quartus Prime megafunction library File: C:/Users/liuyu/Desktop/experimrnt for 08sam/18.counter60/divide.v Line: 18
+Info (12021): Found 1 design units, including 1 entities, in source file divide.v
+    Info (12023): Found entity 1: divide File: C:/Users/liuyu/Desktop/experimrnt for 08sam/18.counter60/divide.v Line: 18
+Info (12021): Found 1 design units, including 1 entities, in source file counter60.v
+    Info (12023): Found entity 1: counter60 File: C:/Users/liuyu/Desktop/experimrnt for 08sam/18.counter60/counter60.v Line: 12
+Info (12127): Elaborating entity "counter60" for the top level hierarchy
+Info (12128): Elaborating entity "divide" for hierarchy "divide:u1" File: C:/Users/liuyu/Desktop/experimrnt for 08sam/18.counter60/counter60.v Line: 32
+Info (12128): Elaborating entity "segment" for hierarchy "segment:u2" File: C:/Users/liuyu/Desktop/experimrnt for 08sam/18.counter60/counter60.v Line: 68
+Warning (10030): Net "seg.data_a" at segment.v(23) has no driver or initial value, using a default initial value '0' File: C:/Users/liuyu/Desktop/experimrnt for 08sam/18.counter60/segment.v Line: 23
+Warning (10030): Net "seg.waddr_a" at segment.v(23) has no driver or initial value, using a default initial value '0' File: C:/Users/liuyu/Desktop/experimrnt for 08sam/18.counter60/segment.v Line: 23
+Warning (10030): Net "seg.we_a" at segment.v(23) has no driver or initial value, using a default initial value '0' File: C:/Users/liuyu/Desktop/experimrnt for 08sam/18.counter60/segment.v Line: 23
+Info (276014): Found 1 instances of uninferred RAM logic
+    Info (276013): RAM logic "segment:u2|seg" is uninferred because MIF is not supported for the selected family File: C:/Users/liuyu/Desktop/experimrnt for 08sam/18.counter60/segment.v Line: 23
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "segment_led_1[7]" is stuck at GND File: C:/Users/liuyu/Desktop/experimrnt for 08sam/18.counter60/counter60.v Line: 16
+    Warning (13410): Pin "segment_led_1[8]" is stuck at GND File: C:/Users/liuyu/Desktop/experimrnt for 08sam/18.counter60/counter60.v Line: 16
+    Warning (13410): Pin "segment_led_2[7]" is stuck at GND File: C:/Users/liuyu/Desktop/experimrnt for 08sam/18.counter60/counter60.v Line: 17
+    Warning (13410): Pin "segment_led_2[8]" is stuck at GND File: C:/Users/liuyu/Desktop/experimrnt for 08sam/18.counter60/counter60.v Line: 17
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 100 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
+    Info (21059): Implemented 18 output pins
+    Info (21061): Implemented 79 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 10 warnings
+    Info: Peak virtual memory: 4763 megabytes
+    Info: Processing ended: Fri Nov 16 09:56:10 2018
+    Info: Elapsed time: 00:00:22
+    Info: Total CPU time (on all processors): 00:00:47
+
+

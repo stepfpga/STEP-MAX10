@@ -1,0 +1,27 @@
+|twist
+clk => cnt[0]~reg0.CLK
+clk => cnt[1]~reg0.CLK
+clk => cnt[2]~reg0.CLK
+clk => cnt[3]~reg0.CLK
+clk => cnt[4]~reg0.CLK
+clk => cnt[5]~reg0.CLK
+clk => cnt[6]~reg0.CLK
+clk => cnt[7]~reg0.CLK
+rst => cnt.OUTPUTSELECT
+rst => cnt.OUTPUTSELECT
+rst => cnt.OUTPUTSELECT
+rst => cnt.OUTPUTSELECT
+rst => cnt.OUTPUTSELECT
+rst => cnt.OUTPUTSELECT
+rst => cnt.OUTPUTSELECT
+rst => cnt.OUTPUTSELECT
+cnt[0] << cnt[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+cnt[1] << cnt[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+cnt[2] << cnt[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+cnt[3] << cnt[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+cnt[4] << cnt[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+cnt[5] << cnt[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+cnt[6] << cnt[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+cnt[7] << cnt[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

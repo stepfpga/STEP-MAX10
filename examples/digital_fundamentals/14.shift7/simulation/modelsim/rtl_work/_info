@@ -1,0 +1,32 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/liuyu/Desktop/experimrnt for 08sam/shift7/simulation/modelsim
+vshift7
+!s110 1542330934
+!i10b 1
+!s100 l>fV9:B9P=VkkFQelmP2N2
+I77C0PDU_R9GzDSh1g=5;M1
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1542330222
+8C:/Users/liuyu/Desktop/experimrnt for 08sam/shift7/shift7.v
+FC:/Users/liuyu/Desktop/experimrnt for 08sam/shift7/shift7.v
+L0 13
+OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1542330934.000000
+!s107 C:/Users/liuyu/Desktop/experimrnt for 08sam/shift7/shift7.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/liuyu/Desktop/experimrnt for 08sam/shift7|C:/Users/liuyu/Desktop/experimrnt for 08sam/shift7/shift7.v|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work {+incdir+C:/Users/liuyu/Desktop/experimrnt for 08sam/shift7}
+tCvgOpt 0

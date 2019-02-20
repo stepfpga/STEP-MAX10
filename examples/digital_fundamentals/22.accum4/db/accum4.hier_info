@@ -1,0 +1,77 @@
+|accum4
+datain => datain.IN1
+clk => clk.IN3
+rst => rst.IN3
+sum[0] <= sumer[0].DB_MAX_OUTPUT_PORT_TYPE
+sum[1] <= shift:u4.dataout
+sum[2] <= shift:u4.dataout
+sum[3] <= shift:u4.dataout
+
+
+|accum4|shift:u1
+clk => data[0].CLK
+clk => data[1].CLK
+clk => data[2].CLK
+clk => data[3].CLK
+rst => data.OUTPUTSELECT
+rst => data.OUTPUTSELECT
+rst => data.OUTPUTSELECT
+rst => data.OUTPUTSELECT
+datain => data.DATAA
+dataout[0] <= data[0].DB_MAX_OUTPUT_PORT_TYPE
+dataout[1] <= data[1].DB_MAX_OUTPUT_PORT_TYPE
+dataout[2] <= data[2].DB_MAX_OUTPUT_PORT_TYPE
+dataout[3] <= data[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accum4|adder1:u2
+a => WideXor0.IN0
+a => s1.IN0
+a => s3.IN0
+b => WideXor0.IN1
+b => s2.IN0
+b => s3.IN1
+cin => WideXor0.IN2
+cin => s1.IN1
+cin => s2.IN1
+sum <= WideXor0.DB_MAX_OUTPUT_PORT_TYPE
+cout <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accum4|ahead:u3
+a => j.IN0
+a => k.IN0
+b => j.IN1
+b => k.IN1
+clk => clk.IN1
+rst => rst.IN1
+q <= jk_ff:u1.q
+
+
+|accum4|ahead:u3|jk_ff:u1
+clk => q~reg0.CLK
+j => Mux0.IN2
+k => Mux0.IN3
+rst => q.IN0
+rst => q~reg0.ACLR
+set => q.IN1
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+qb <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|accum4|shift:u4
+clk => data[0].CLK
+clk => data[1].CLK
+clk => data[2].CLK
+clk => data[3].CLK
+rst => data.OUTPUTSELECT
+rst => data.OUTPUTSELECT
+rst => data.OUTPUTSELECT
+rst => data.OUTPUTSELECT
+datain => data.DATAA
+dataout[0] <= data[0].DB_MAX_OUTPUT_PORT_TYPE
+dataout[1] <= data[1].DB_MAX_OUTPUT_PORT_TYPE
+dataout[2] <= data[2].DB_MAX_OUTPUT_PORT_TYPE
+dataout[3] <= data[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

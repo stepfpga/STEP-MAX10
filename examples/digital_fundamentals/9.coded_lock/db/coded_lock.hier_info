@@ -1,0 +1,11 @@
+|coded_lock
+q => Equal0.IN2
+u => Equal0.IN0
+n => Equal0.IN3
+b => Equal0.IN1
+d => open.OUTPUTSELECT
+d => alarm.LATCH_ENABLE
+led1 << open.DB_MAX_OUTPUT_PORT_TYPE
+led2 << alarm.DB_MAX_OUTPUT_PORT_TYPE
+
+

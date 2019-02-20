@@ -1,0 +1,14 @@
+|adder1
+a => WideXor0.IN0
+a => s1.IN0
+a => s3.IN0
+b => WideXor0.IN1
+b => s2.IN0
+b => s3.IN1
+cin => WideXor0.IN2
+cin => s1.IN1
+cin => s2.IN1
+sum << WideXor0.DB_MAX_OUTPUT_PORT_TYPE
+cout << WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Fri Nov 16 09:31:36 2018
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+Revision Name : twist
+Top-level Entity Name : twist
+Family : MAX 10
+Total logic elements : 8
+    Total combinational functions : 8
+    Dedicated logic registers : 8
+Total registers : 8
+Total pins : 10
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

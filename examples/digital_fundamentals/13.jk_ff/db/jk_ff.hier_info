@@ -1,0 +1,11 @@
+|jk_ff
+clk => q~reg0.CLK
+j => Mux0.IN2
+k => Mux0.IN3
+rst => q.IN0
+rst => q~reg0.ACLR
+set => q.IN1
+q << q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+qb << q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

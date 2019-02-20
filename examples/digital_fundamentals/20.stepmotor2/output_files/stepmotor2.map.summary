@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Fri Nov 16 10:10:00 2018
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+Revision Name : stepmotor2
+Top-level Entity Name : stepmotor2
+Family : MAX 10
+Total logic elements : 56
+    Total combinational functions : 54
+    Dedicated logic registers : 33
+Total registers : 33
+Total pins : 7
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

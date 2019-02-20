@@ -1,0 +1,18 @@
+Fitter Status : Successful - Fri Nov 16 10:06:47 2018
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+Revision Name : stepmotor1
+Top-level Entity Name : stepmotor1
+Family : MAX 10
+Device : 10M08SAM153C8G
+Timing Models : Final
+Total logic elements : 71 / 8,064 ( < 1 % )
+    Total combinational functions : 65 / 8,064 ( < 1 % )
+    Dedicated logic registers : 40 / 8,064 ( < 1 % )
+Total registers : 40
+Total pins : 8 / 112 ( 7 % )
+Total virtual pins : 0
+Total memory bits : 0 / 387,072 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 48 ( 0 % )
+Total PLLs : 0 / 1 ( 0 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0 / 1 ( 0 % )

@@ -1,0 +1,9 @@
+|decode24
+a[0] => Decoder0.IN1
+a[1] => Decoder0.IN0
+led[0] << Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+led[1] << Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+led[2] << Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+led[3] << Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+

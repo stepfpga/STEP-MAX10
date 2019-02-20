@@ -1,0 +1,142 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/liuyu/Desktop/experimrnt for 08sam/22.accum4/simulation/modelsim
+vaccum4
+Z1 !s110 1542335020
+!i10b 1
+!s100 YGKl=mRi_;@K7OzO8Il9F0
+I[2aao2DY;F17c<Y>]9HHC2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1542334803
+8C:/Users/liuyu/Desktop/experimrnt for 08sam/22.accum4/accum4.v
+FC:/Users/liuyu/Desktop/experimrnt for 08sam/22.accum4/accum4.v
+Z3 L0 13
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1542335019.000000
+!s107 C:/Users/liuyu/Desktop/experimrnt for 08sam/22.accum4/accum4.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/liuyu/Desktop/experimrnt for 08sam/22.accum4|C:/Users/liuyu/Desktop/experimrnt for 08sam/22.accum4/accum4.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work {+incdir+C:/Users/liuyu/Desktop/experimrnt for 08sam/22.accum4}
+Z8 tCvgOpt 0
+vaccum4_tb
+R1
+!i10b 1
+!s100 UUPUH<TBcaC`bzWROHZ3_2
+ImgndGN7<zH8>Vj`m316Sm2
+R2
+R0
+w1542334817
+8C:/Users/liuyu/Desktop/experimrnt for 08sam/22.accum4/accum4_tb.v
+FC:/Users/liuyu/Desktop/experimrnt for 08sam/22.accum4/accum4_tb.v
+R3
+R4
+r1
+!s85 0
+31
+!s108 1542335020.000000
+!s107 C:/Users/liuyu/Desktop/experimrnt for 08sam/22.accum4/accum4_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/liuyu/Desktop/experimrnt for 08sam/22.accum4|C:/Users/liuyu/Desktop/experimrnt for 08sam/22.accum4/accum4_tb.v|
+!i113 1
+R6
+R7
+R8
+vadder1
+Z9 !s110 1542335019
+!i10b 1
+!s100 gLgV=>db8o<T?oAm38aU;1
+Iz2gS8]AZN`VHIOm:[28<:0
+R2
+R0
+w1542334828
+8C:/Users/liuyu/Desktop/experimrnt for 08sam/22.accum4/adder1.v
+FC:/Users/liuyu/Desktop/experimrnt for 08sam/22.accum4/adder1.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/liuyu/Desktop/experimrnt for 08sam/22.accum4/adder1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/liuyu/Desktop/experimrnt for 08sam/22.accum4|C:/Users/liuyu/Desktop/experimrnt for 08sam/22.accum4/adder1.v|
+!i113 1
+R6
+R7
+R8
+vahead
+R9
+!i10b 1
+!s100 4d1S?a5UlAJ>dE^1Mf]f?1
+Ic6A4U>F^4VN>lZh;G0ST]3
+R2
+R0
+w1542334837
+8C:/Users/liuyu/Desktop/experimrnt for 08sam/22.accum4/ahead.v
+FC:/Users/liuyu/Desktop/experimrnt for 08sam/22.accum4/ahead.v
+L0 15
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/liuyu/Desktop/experimrnt for 08sam/22.accum4/ahead.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/liuyu/Desktop/experimrnt for 08sam/22.accum4|C:/Users/liuyu/Desktop/experimrnt for 08sam/22.accum4/ahead.v|
+!i113 1
+R6
+R7
+R8
+vjk_ff
+R9
+!i10b 1
+!s100 Z`ISfneHJ2FEXJWAGMUNR0
+IgIi5X:EMP^=oUKY]JzK]S3
+R2
+R0
+w1542334847
+8C:/Users/liuyu/Desktop/experimrnt for 08sam/22.accum4/jk_ff.v
+FC:/Users/liuyu/Desktop/experimrnt for 08sam/22.accum4/jk_ff.v
+L0 12
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/liuyu/Desktop/experimrnt for 08sam/22.accum4/jk_ff.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/liuyu/Desktop/experimrnt for 08sam/22.accum4|C:/Users/liuyu/Desktop/experimrnt for 08sam/22.accum4/jk_ff.v|
+!i113 1
+R6
+R7
+R8
+vshift
+R9
+!i10b 1
+!s100 L:31KV3loRCFWK59:A<j]2
+In^7GGXZMYP94oWJYD;PY<3
+R2
+R0
+w1542334865
+8C:/Users/liuyu/Desktop/experimrnt for 08sam/22.accum4/shift.v
+FC:/Users/liuyu/Desktop/experimrnt for 08sam/22.accum4/shift.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/liuyu/Desktop/experimrnt for 08sam/22.accum4/shift.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/liuyu/Desktop/experimrnt for 08sam/22.accum4|C:/Users/liuyu/Desktop/experimrnt for 08sam/22.accum4/shift.v|
+!i113 1
+R6
+R7
+R8

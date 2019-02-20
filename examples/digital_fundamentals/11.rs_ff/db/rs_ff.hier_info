@@ -1,0 +1,8 @@
+|rs_ff
+clk => q~reg0.CLK
+r => Mux0.IN3
+s => Mux0.IN4
+q << q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+qb << q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

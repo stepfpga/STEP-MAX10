@@ -1,0 +1,25 @@
+|shift7
+clk => data[0].CLK
+clk => data[1].CLK
+clk => data[2].CLK
+clk => data[3].CLK
+clk => data[4].CLK
+clk => data[5].CLK
+clk => data[6].CLK
+rst => data.OUTPUTSELECT
+rst => data.OUTPUTSELECT
+rst => data.OUTPUTSELECT
+rst => data.OUTPUTSELECT
+rst => data.OUTPUTSELECT
+rst => data.OUTPUTSELECT
+rst => data.OUTPUTSELECT
+datain[0] => data.DATAB
+datain[1] => data.DATAB
+datain[2] => data.DATAB
+datain[3] => data.DATAB
+datain[4] => data.DATAB
+datain[5] => data.DATAB
+datain[6] => data.DATAB
+dataout <= data[0].DB_MAX_OUTPUT_PORT_TYPE
+
+

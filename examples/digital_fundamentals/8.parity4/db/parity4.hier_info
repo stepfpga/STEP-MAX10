@@ -1,0 +1,8 @@
+|parity4
+a => led.IN0
+b => led.IN1
+c => led.IN1
+d => led.IN1
+led << led.DB_MAX_OUTPUT_PORT_TYPE
+
+

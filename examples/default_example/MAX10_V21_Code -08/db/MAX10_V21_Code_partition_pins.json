@@ -1,0 +1,301 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Water_led[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Water_led[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Water_led[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Water_led[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Water_led[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Water_led[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Water_led[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Water_led[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Color_led_1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Color_led_1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Color_led_1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Color_led_2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Color_led_2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Color_led_2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Segment_led_1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Segment_led_1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Segment_led_1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Segment_led_1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Segment_led_1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Segment_led_1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Segment_led_1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Segment_led_2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Segment_led_2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Segment_led_2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Segment_led_2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Segment_led_2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Segment_led_2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Segment_led_2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[0]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[1]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[2]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[3]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[4]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[5]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[6]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[7]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[8]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[9]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[10]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[11]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[12]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[13]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[14]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[15]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[16]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[17]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[18]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[19]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[20]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[21]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[22]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[23]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[24]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[25]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[26]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[27]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[28]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[29]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[30]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[31]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[32]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[33]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[34]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[35]",
+					"strict" : false
+				},
+				{
+					"name" : "clk_in",
+					"strict" : false
+				},
+				{
+					"name" : "rst_n_in",
+					"strict" : false
+				},
+				{
+					"name" : "SW[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[3]",
+					"strict" : false
+				},
+				{
+					"name" : "BTN[1]",
+					"strict" : false
+				},
+				{
+					"name" : "BTN[2]",
+					"strict" : false
+				},
+				{
+					"name" : "BTN[0]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

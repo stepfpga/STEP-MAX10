@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Thu Nov 15 16:52:59 2018
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+Revision Name : decode24
+Top-level Entity Name : decode24
+Family : MAX 10
+Total logic elements : 4
+    Total combinational functions : 4
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 6
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0
