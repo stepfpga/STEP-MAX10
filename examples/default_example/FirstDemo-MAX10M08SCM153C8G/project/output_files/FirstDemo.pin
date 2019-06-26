@@ -1,0 +1,222 @@
+ -- Copyright (C) 2018  Intel Corporation. All rights reserved.
+ -- Your use of Intel Corporation's design tools, logic functions 
+ -- and other software and tools, and its AMPP partner logic 
+ -- functions, and any output files from any of the foregoing 
+ -- (including device programming or simulation files), and any 
+ -- associated documentation or information are expressly subject 
+ -- to the terms and conditions of the Intel Program License 
+ -- Subscription Agreement, the Intel Quartus Prime License Agreement,
+ -- the Intel FPGA IP License Agreement, or other applicable license
+ -- agreement, including, without limitation, that your use is for
+ -- the sole purpose of programming logic devices manufactured by
+ -- Intel and sold by Intel or its authorized distributors.  Please
+ -- refer to the applicable agreement for further details.
+ -- 
+ -- This is a Quartus Prime output file. It is for reporting purposes only, and is
+ -- not intended for use as a Quartus Prime input file. This file cannot be used
+ -- to make Quartus Prime pin assignments - for instructions on how to make pin
+ -- assignments, please see Quartus Prime help.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- NC            : No Connect. This pin has no internal connection to the device.
+ -- DNU           : Do Not Use. This pin MUST NOT be connected.
+ -- VCCINT        : Dedicated power pin, which MUST be connected to VCC  (1.2V).
+ -- VCCIO         : Dedicated power pin, which MUST be connected to VCC
+ --                 of its bank.
+ --                  Bank 1A:       3.3V
+ --                  Bank 1B:       3.3V
+ --                  Bank 2:       3.3V
+ --                  Bank 3:       3.3V
+ --                  Bank 5:       3.3V
+ --                  Bank 6:       3.3V
+ --                  Bank 8:       3.3V
+ -- GND           : Dedicated ground pin. Dedicated GND pins MUST be connected to GND.
+ --                  It can also be used to report unused dedicated pins. The connection
+ --                  on the board for unused dedicated pins depends on whether this will
+ --                  be used in a future design. One example is device migration. When
+ --                  using device migration, refer to the device pin-tables. If it is a
+ --                  GND pin in the pin table or if it will not be used in a future design
+ --                  for another purpose the it MUST be connected to GND. If it is an unused
+ --                  dedicated pin, then it can be connected to a valid signal on the board
+ --                  (low, high, or toggling) if that signal is required for a different
+ --                  revision of the design.
+ -- GND+          : Unused input pin. It can also be used to report unused dual-purpose pins.
+ --                  This pin should be connected to GND. It may also be connected  to a
+ --                  valid signal  on the board  (low, high, or toggling)  if that signal
+ --                  is required for a different revision of the design.
+ -- GND*          : Unused  I/O  pin. Connect each pin marked GND* directly to GND
+ --                  or leave it unconnected.
+ -- RESERVED      : Unused I/O pin, which MUST be left unconnected.
+ -- RESERVED_INPUT    : Pin is tri-stated and should be connected to the board.
+ -- RESERVED_INPUT_WITH_WEAK_PULLUP    : Pin is tri-stated with internal weak pull-up resistor.
+ -- RESERVED_INPUT_WITH_BUS_HOLD       : Pin is tri-stated with bus-hold circuitry.
+ -- RESERVED_OUTPUT_DRIVEN_HIGH        : Pin is output driven high.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- Pin directions (input, output or bidir) are based on device operating in user mode.
+ ---------------------------------------------------------------------------------
+
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+CHIP  "FirstDemo"  ASSIGNED TO AN: 10M08SCM153C8G
+
+Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
+-------------------------------------------------------------------------------------------------------------
+GND                          : A1        : gnd    :                   :         :           :                
+Segment_led_2[1]             : A2        : output : 3.3-V LVCMOS      :         : 8         : Y              
+Segment_led_2[0]             : A3        : output : 3.3-V LVCMOS      :         : 8         : Y              
+GPIO[34]                     : A5        : output : 3.3-V LVCMOS      :         : 8         : Y              
+GPIO[33]                     : A7        : output : 3.3-V LVCMOS      :         : 8         : Y              
+GPIO[25]                     : A9        : output : 3.3-V LVCMOS      :         : 8         : Y              
+GPIO[24]                     : A11       : output : 3.3-V LVCMOS      :         : 8         : Y              
+GPIO[23]                     : A13       : output : 3.3-V LVCMOS      :         : 8         : Y              
+GPIO[21]                     : A14       : output : 3.3-V LVCMOS      :         : 8         : Y              
+GND                          : A15       : gnd    :                   :         :           :                
+Segment_led_2[8]             : B1        : output : 3.3-V LVCMOS      :         : 1A        : Y              
+GND                          : B2        : gnd    :                   :         :           :                
+VCCA3                        : B3        : power  :                   : 3.0V/3.3V :           :                
+GPIO[35]                     : B4        : output : 3.3-V LVCMOS      :         : 8         : Y              
+VCCIO8                       : B5        : power  :                   : 3.3V    : 8         :                
+GPIO[32]                     : B6        : output : 3.3-V LVCMOS      :         : 8         : Y              
+GPIO[29]                     : B7        : output : 3.3-V LVCMOS      :         : 8         : Y              
+GPIO[27]                     : B8        : output : 3.3-V LVCMOS      :         : 8         : Y              
+VCCIO8                       : B9        : power  :                   : 3.3V    : 8         :                
+VCCIO8                       : B10       : power  :                   : 3.3V    : 8         :                
+GPIO[22]                     : B11       : output : 3.3-V LVCMOS      :         : 8         : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : B12       :        :                   :         : 8         :                
+GPIO[20]                     : B13       : output : 3.3-V LVCMOS      :         : 8         : Y              
+GPIO[19]                     : B14       : output : 3.3-V LVCMOS      :         : 8         : Y              
+GPIO[18]                     : B15       : output : 3.3-V LVCMOS      :         : 8         : Y              
+Segment_led_2[5]             : C1        : output : 3.3-V LVCMOS      :         : 1A        : Y              
+Segment_led_2[6]             : C2        : output : 3.3-V LVCMOS      :         : 1A        : Y              
+GPIO[28]                     : C8        : output : 3.3-V LVCMOS      :         : 8         : Y              
+Color_led_2[1]               : C14       : output : 3.3-V LVCMOS      :         : 6         : Y              
+Color_led_2[0]               : C15       : output : 3.3-V LVCMOS      :         : 6         : Y              
+Segment_led_1[1]             : D2        : output : 3.3-V LVCMOS      :         : 1A        : Y              
+GND                          : D4        : gnd    :                   :         :           :                
+GND                          : D5        : gnd    :                   :         :           :                
+~ALTERA_nSTATUS~ / RESERVED_INPUT : D6        : input  : 3.3 V Schmitt Trigger :         : 8         : N              
+GPIO[30]                     : D7        : output : 3.3-V LVCMOS      :         : 8         : Y              
+~ALTERA_CONFIG_SEL~ / RESERVED_INPUT : D8        : input  : 3.3-V LVCMOS      :         : 8         : N              
+GND                          : D9        : gnd    :                   :         :           :                
+GPIO[26]                     : D10       : output : 3.3-V LVCMOS      :         : 8         : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D11       :        :                   :         : 8         :                
+Color_led_2[2]               : D12       : output : 3.3-V LVCMOS      :         : 6         : Y              
+VCCA2                        : D14       : power  :                   : 3.0V/3.3V :           :                
+Segment_led_1[0]             : E1        : output : 3.3-V LVCMOS      :         : 1A        : Y              
+Segment_led_1[8]             : E2        : output : 3.3-V LVCMOS      :         : 1A        : Y              
+GND                          : E4        : gnd    :                   :         :           :                
+GND                          : E5        : gnd    :                   :         :           :                
+~ALTERA_CONF_DONE~ / RESERVED_INPUT : E6        : input  : 3.3 V Schmitt Trigger :         : 8         : N              
+GPIO[31]                     : E7        : output : 3.3-V LVCMOS      :         : 8         : Y              
+~ALTERA_nCONFIG~ / RESERVED_INPUT : E8        : input  : 3.3 V Schmitt Trigger :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : E9        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E10       :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E11       :        :                   :         : 6         :                
+GND                          : E12       : gnd    :                   :         :           :                
+Color_led_1[2]               : E14       : output : 3.3-V LVCMOS      :         : 6         : Y              
+Color_led_1[1]               : E15       : output : 3.3-V LVCMOS      :         : 6         : Y              
+VCCIO1A                      : F2        : power  :                   : 3.3V    : 1A        :                
+VCCA3                        : F4        : power  :                   : 3.0V/3.3V :           :                
+Segment_led_1[5]             : F5        : output : 3.3-V LVCMOS      :         : 1A        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : F11       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F12       :        :                   :         : 6         :                
+VCCIO6                       : F14       : power  :                   : 3.3V    : 6         :                
+~ALTERA_TMS~ / RESERVED_INPUT_WITH_WEAK_PULLUP : G1        : input  : 3.3 V Schmitt Trigger :         : 1B        : N              
+Segment_led_1[4]             : G2        : output : 3.3-V LVCMOS      :         : 1B        : Y              
+GND                          : G4        : gnd    :                   :         :           :                
+Segment_led_1[6]             : G5        : output : 3.3-V LVCMOS      :         : 1A        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G7        :        :                   :         : 1B        :                
+VCC_ONE                      : G8        : power  :                   : 3.0V/3.3V :           :                
+GND                          : G9        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G11       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G12       :        :                   :         : 6         :                
+VCCIO6                       : G14       : power  :                   : 3.3V    : 6         :                
+Color_led_1[0]               : G15       : output : 3.3-V LVCMOS      :         : 6         : Y              
+VCCIO1B                      : H2        : power  :                   : 3.3V    : 1B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H3        :        :                   :         : 1B        :                
+~ALTERA_TDO~                 : H4        : output : 3.3-V LVCMOS      :         : 1B        : N              
+~ALTERA_TDI~ / RESERVED_INPUT_WITH_WEAK_PULLUP : H5        : input  : 3.3 V Schmitt Trigger :         : 1B        : N              
+VCC_ONE                      : H7        : power  :                   : 3.0V/3.3V :           :                
+GND                          : H8        : gnd    :                   :         :           :                
+VCC_ONE                      : H9        : power  :                   : 3.0V/3.3V :           :                
+SW[1]                        : H11       : input  : 3.3-V LVCMOS      :         : 6         : Y              
+SW[2]                        : H12       : input  : 3.3-V LVCMOS      :         : 6         : Y              
+SW[3]                        : H13       : input  : 3.3-V LVCMOS      :         : 6         : Y              
+GND                          : H14       : gnd    :                   :         :           :                
+~ALTERA_TCK~ / RESERVED_INPUT : J1        : input  : 3.3 V Schmitt Trigger :         : 1B        : N              
+Segment_led_1[3]             : J2        : output : 3.3-V LVCMOS      :         : 1B        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : J4        :        :                   :         : 2         :                
+clk_in                       : J5        : input  : 3.3-V LVCMOS      :         : 2         : Y              
+GND                          : J7        : gnd    :                   :         :           :                
+VCC_ONE                      : J8        : power  :                   : 3.0V/3.3V :           :                
+BTN[0]                       : J9        : input  : 3.3-V LVCMOS      :         : 5         : Y              
+BTN[2]                       : J11       : input  : 3.3-V LVCMOS      :         : 5         : Y              
+SW[0]                        : J12       : input  : 3.3-V LVCMOS      :         : 6         : Y              
+rst_n_in                     : J14       : input  : 3.3-V LVCMOS      :         : 5         : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : J15       :        :                   :         : 6         :                
+Segment_led_1[2]             : K2        : output : 3.3-V LVCMOS      :         : 1B        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : K4        :        :                   :         : 2         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : K5        :        :                   :         : 2         :                
+Water_led[7]                 : K11       : output : 3.3-V LVCMOS      :         : 5         : Y              
+Water_led[5]                 : K12       : output : 3.3-V LVCMOS      :         : 5         : Y              
+BTN[1]                       : K14       : input  : 3.3-V LVCMOS      :         : 5         : Y              
+Segment_led_1[7]             : L1        : output : 3.3-V LVCMOS      :         : 1B        : Y              
+VCCIO2                       : L2        : power  :                   : 3.3V    : 2         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L4        :        :                   :         : 2         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L5        :        :                   :         : 2         :                
+GPIO[4]                      : L6        : output : 3.3-V LVCMOS      :         : 3         : Y              
+GPIO[6]                      : L7        : output : 3.3-V LVCMOS      :         : 3         : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : L8        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L9        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L10       :        :                   :         : 3         :                
+Water_led[6]                 : L11       : output : 3.3-V LVCMOS      :         : 5         : Y              
+GND                          : L12       : gnd    :                   :         :           :                
+VCCIO5                       : L14       : power  :                   : 3.3V    : 5         :                
+Water_led[4]                 : L15       : output : 3.3-V LVCMOS      :         : 5         : Y              
+GND                          : M2        : gnd    :                   :         :           :                
+GPIO[0]                      : M4        : output : 3.3-V LVCMOS      :         : 3         : Y              
+GPIO[2]                      : M5        : output : 3.3-V LVCMOS      :         : 3         : Y              
+GND                          : M6        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M7        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M8        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M9        :        :                   :         : 3         :                
+GND                          : M10       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M11       :        :                   :         : 3         :                
+Water_led[3]                 : M12       : output : 3.3-V LVCMOS      :         : 5         : Y              
+Water_led[2]                 : M14       : output : 3.3-V LVCMOS      :         : 5         : Y              
+Segment_led_2[4]             : N1        : output : 3.3-V LVCMOS      :         : 2         : Y              
+VCCA1                        : N2        : power  :                   : 3.0V/3.3V :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : N8        :        :                   :         : 3         :                
+Water_led[1]                 : N14       : output : 3.3-V LVCMOS      :         : 5         : Y              
+Water_led[0]                 : N15       : output : 3.3-V LVCMOS      :         : 5         : Y              
+Segment_led_2[3]             : P1        : output : 3.3-V LVCMOS      :         : 2         : Y              
+Segment_led_2[2]             : P2        : output : 3.3-V LVCMOS      :         : 2         : Y              
+GPIO[1]                      : P3        : output : 3.3-V LVCMOS      :         : 3         : Y              
+GPIO[5]                      : P4        : output : 3.3-V LVCMOS      :         : 3         : Y              
+VCCIO3                       : P5        : power  :                   : 3.3V    : 3         :                
+GPIO[8]                      : P6        : output : 3.3-V LVCMOS      :         : 3         : Y              
+GPIO[10]                     : P7        : output : 3.3-V LVCMOS      :         : 3         : Y              
+GPIO[11]                     : P8        : output : 3.3-V LVCMOS      :         : 3         : Y              
+GPIO[12]                     : P9        : output : 3.3-V LVCMOS      :         : 3         : Y              
+VCCIO3                       : P10       : power  :                   : 3.3V    : 3         :                
+VCCIO3                       : P11       : power  :                   : 3.3V    : 3         :                
+GPIO[15]                     : P12       : output : 3.3-V LVCMOS      :         : 3         : Y              
+VCCA4                        : P13       : power  :                   : 3.0V/3.3V :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : P14       :        :                   :         : 3         :                
+GPIO[17]                     : P15       : output : 3.3-V LVCMOS      :         : 3         : Y              
+GND                          : R1        : gnd    :                   :         :           :                
+Segment_led_2[7]             : R2        : output : 3.3-V LVCMOS      :         : 2         : Y              
+GPIO[3]                      : R3        : output : 3.3-V LVCMOS      :         : 3         : Y              
+GPIO[7]                      : R5        : output : 3.3-V LVCMOS      :         : 3         : Y              
+GPIO[9]                      : R7        : output : 3.3-V LVCMOS      :         : 3         : Y              
+GPIO[13]                     : R9        : output : 3.3-V LVCMOS      :         : 3         : Y              
+GPIO[14]                     : R11       : output : 3.3-V LVCMOS      :         : 3         : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : R13       :        :                   :         : 3         :                
+GPIO[16]                     : R14       : output : 3.3-V LVCMOS      :         : 3         : Y              
+GND                          : R15       : gnd    :                   :         :           :                

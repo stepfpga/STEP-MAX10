@@ -1,0 +1,18 @@
+Fitter Status : Successful - Wed Jun 26 13:28:43 2019
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : FirstDemo
+Top-level Entity Name : FirstDemo
+Family : MAX 10
+Device : 10M02SCM153C8G
+Timing Models : Final
+Total logic elements : 166 / 2,304 ( 7 % )
+    Total combinational functions : 164 / 2,304 ( 7 % )
+    Dedicated logic registers : 86 / 2,304 ( 4 % )
+Total registers : 86
+Total pins : 77 / 112 ( 69 % )
+Total virtual pins : 0
+Total memory bits : 0 / 110,592 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 32 ( 0 % )
+Total PLLs : 0 / 1 ( 0 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0
